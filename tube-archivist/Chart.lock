@@ -1,0 +1,9 @@
+dependencies:
+- name: rejson
+  repository: file://charts/rejson
+  version: 0.1.0
+- name: elasticsearch
+  repository: https://Helm.elastic.co
+  version: 7.16.1
+digest: sha256:ff91616ee33b541cc74581dcb941527d34f4bbdf025c5f2216c88428a1ab433a
+generated: "2021-12-20T20:56:36.270504786-06:00"
