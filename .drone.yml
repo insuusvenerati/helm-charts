@@ -8,3 +8,11 @@ steps:
     commands:
       - helm package charts/tube-archivist
       - helm repo index --url https://insuusvenerati.github.io/helm-charts/ .
+
+  - name: Publish Changes
+    image: stiforr/ci-tools:1
+    commands: |
+      git config user.name "Drone CI"
+      git add -A
+      git commit -m "chore: update helm index"
+      git push -u origin main

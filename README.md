@@ -1,5 +1,7 @@
 # Helm Charts
 
+[![Build Status](https://drone.home.stiforr.tech/api/badges/insuusvenerati/helm-charts/status.svg?ref=refs/heads/main)](https://drone.home.stiforr.tech/insuusvenerati/helm-charts)
+
 [tube-archivist](charts/tube-archivist/README.md)
 
 TODO:
