@@ -1,0 +1,21 @@
+apiVersion: v1
+entries:
+  tubearchivist:
+  - apiVersion: v2
+    appVersion: v0.0.9
+    created: "2022-01-08T16:58:47.507759824-06:00"
+    dependencies:
+    - name: rejson
+      repository: file://charts/rejson
+      version: 0.1.0
+    - name: elasticsearch
+      repository: https://Helm.elastic.co
+      version: 7.16.1
+    description: A Helm chart for Kubernetes
+    digest: f8b6b1ae3a1e269ea552221d3a7da3f039f7539d799fa0be734eccf8f7fa8ee0
+    name: tubearchivist
+    type: application
+    urls:
+    - https://insuusvenerati.github.io/helm-charts/tubearchivist-0.2.0.tgz
+    version: 0.2.0
+generated: "2022-01-08T16:58:47.50471663-06:00"
