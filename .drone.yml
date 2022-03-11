@@ -2,6 +2,11 @@ kind: pipeline
 type: docker
 name: default
 
+trigger:
+  event:
+    exclude:
+      - promote
+
 steps:
   - name: Tubearchivist
     image: stiforr/ci-tools:1
@@ -11,8 +16,9 @@ steps:
 
   - name: Publish Changes
     image: stiforr/ci-tools:1
-    commands: |
-      git config user.name "Drone CI"
-      git add -A
+    commands:
+    - git config user.name "Drone CI"
+    - git add -A
+    - >-
       git commit -m "chore: update helm index"
-      git push -u origin main
+    - git push -u origin main

@@ -3,7 +3,7 @@ entries:
   tubearchivist:
   - apiVersion: v2
     appVersion: v0.1.0
-    created: "2022-01-10T08:59:16.164330125-06:00"
+    created: "2022-03-10T20:41:47.63247158-06:00"
     dependencies:
     - name: rejson
       repository: file://charts/rejson
@@ -20,7 +20,7 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: v0.0.9
-    created: "2022-01-10T08:59:16.161271233-06:00"
+    created: "2022-03-10T20:41:47.629443237-06:00"
     dependencies:
     - name: rejson
       repository: file://charts/rejson
@@ -35,4 +35,4 @@ entries:
     urls:
     - https://insuusvenerati.github.io/helm-charts/tubearchivist-0.2.0.tgz
     version: 0.2.0
-generated: "2022-01-10T08:59:16.15473101-06:00"
+generated: "2022-03-10T20:41:47.621662002-06:00"
