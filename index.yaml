@@ -2,8 +2,25 @@ apiVersion: v1
 entries:
   tubearchivist:
   - apiVersion: v2
+    appVersion: v0.1.2
+    created: "2022-03-29T08:15:12.884856523-05:00"
+    dependencies:
+    - name: rejson
+      repository: file://charts/rejson
+      version: 0.1.0
+    - name: elasticsearch
+      repository: https://Helm.elastic.co
+      version: 7.16.1
+    description: A Helm chart for Kubernetes
+    digest: bb6453447594717d1c53c27f1ca1041451879ec548434e1ea142b9db612edb5e
+    name: tubearchivist
+    type: application
+    urls:
+    - https://insuusvenerati.github.io/helm-charts/tubearchivist-0.4.0.tgz
+    version: 0.4.0
+  - apiVersion: v2
     appVersion: v0.1.0
-    created: "2022-03-10T20:41:47.63247158-06:00"
+    created: "2022-03-29T08:15:12.880962605-05:00"
     dependencies:
     - name: rejson
       repository: file://charts/rejson
@@ -20,7 +37,7 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: v0.0.9
-    created: "2022-03-10T20:41:47.629443237-06:00"
+    created: "2022-03-29T08:15:12.878479664-05:00"
     dependencies:
     - name: rejson
       repository: file://charts/rejson
@@ -35,4 +52,4 @@ entries:
     urls:
     - https://insuusvenerati.github.io/helm-charts/tubearchivist-0.2.0.tgz
     version: 0.2.0
-generated: "2022-03-10T20:41:47.621662002-06:00"
+generated: "2022-03-29T08:15:12.87548684-05:00"
