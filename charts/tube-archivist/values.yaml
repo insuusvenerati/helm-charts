@@ -47,7 +47,8 @@ persistence:
   enabled: true
   # -- Use your storageClassName. e.g. local-path for k3s
   storageClassName: "local-path"
-  size: 5Gi
+  youtubeSize: 20Gi
+  cacheSize: 5Gi
   volumeMounts:
     - mountPath: "/youtube"
       name: youtube
