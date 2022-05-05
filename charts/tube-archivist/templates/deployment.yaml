@@ -41,7 +41,22 @@ spec:
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           env:
-            {{- toYaml .Values.env | nindent 12 }}
+          - name: ES_URL
+            value: http://elasticsearch-master:9200
+          - name: REDIS_HOST
+            value: tube-archivist-rejson
+          - name: HOST_GID
+            value: "1000"
+          - name: HOST_UID
+            value: "1000"
+          - name: TA_USERNAME
+            value: {{ .Values.login.username }}
+          - name: TA_PASSWORD
+            value: {{ .Values.login.password }}
+          - name: ELASTIC_PASSWORD
+            value: {{ .Values.elastic.password }}
+          - name: TZ
+            value: {{ .Values.timezone }}
           {{- with .Values.persistence }}
           volumeMounts:
             {{- toYaml .volumeMounts | nindent 12 }}
