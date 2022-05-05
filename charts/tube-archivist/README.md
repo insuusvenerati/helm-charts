@@ -4,6 +4,12 @@
 
 A Helm chart for Kubernetes
 
+## Installation
+```bash
+helm repo add tubearchivist https://insuusvenerati.github.io/helm-charts/
+helm upgrade --install tubearchivist tubearchivist/tubearchvist
+```
+
 ## Requirements
 
 | Repository | Name | Version |
