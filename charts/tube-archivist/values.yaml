@@ -18,6 +18,7 @@ elasticsearch:
   persistence:
     enabled: true
   volumeClaimTemplate:
+    storageClassName: ""
     resources:
       requests:
         storage: 5Gi
@@ -40,7 +41,7 @@ elasticsearch:
 login:
   username: admin
   password: changeme
-  
+
 timezone: America/Chicago
 
 persistence:
@@ -66,8 +67,7 @@ serviceAccount:
 
 podAnnotations: {}
 
-podSecurityContext:
-  {}
+podSecurityContext: {}
 # fsGroup: 2000
 
 securityContext:

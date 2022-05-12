@@ -3,7 +3,7 @@ entries:
   pinry:
   - apiVersion: v2
     appVersion: 2.1.6
-    created: "2022-05-12T11:19:18.506473483-05:00"
+    created: "2022-05-12T12:25:00.697512797-05:00"
     description: A Helm chart for Kubernetes
     digest: 147646133a55dc9676676aab4732e36c4f9db9e0dbaab416bd58b16d82ee7e6c
     name: pinry
@@ -14,7 +14,7 @@ entries:
   tubearchivist:
   - apiVersion: v2
     appVersion: v0.1.5
-    created: "2022-05-12T11:19:18.528735586-05:00"
+    created: "2022-05-12T12:25:00.716327416-05:00"
     dependencies:
     - name: rejson
       repository: file://charts/rejson
@@ -23,15 +23,15 @@ entries:
       repository: https://Helm.elastic.co
       version: 7.17.1
     description: A Helm chart for Kubernetes
-    digest: fa1d7e12079375e067c35dff09c550264f7785e3351a3031b4bc758ddc8d8563
+    digest: 1ce6d518518fb0d0ba99a8815d3c4f9d67a6252f24d3c17d6901d773aedf5dad
     name: tubearchivist
     type: application
     urls:
-    - https://insuusvenerati.github.io/helm-charts/tubearchivist-0.4.3.tgz
-    version: 0.4.3
+    - https://insuusvenerati.github.io/helm-charts/tubearchivist-0.4.4.tgz
+    version: 0.4.4
   - apiVersion: v2
     appVersion: v0.1.3
-    created: "2022-05-12T11:19:18.525318773-05:00"
+    created: "2022-05-12T12:25:00.713129994-05:00"
     dependencies:
     - name: rejson
       repository: file://charts/rejson
@@ -48,7 +48,7 @@ entries:
     version: 0.4.2
   - apiVersion: v2
     appVersion: v0.1.3
-    created: "2022-05-12T11:19:18.52199463-05:00"
+    created: "2022-05-12T12:25:00.710280855-05:00"
     dependencies:
     - name: rejson
       repository: file://charts/rejson
@@ -65,7 +65,7 @@ entries:
     version: 0.4.1
   - apiVersion: v2
     appVersion: v0.1.2
-    created: "2022-05-12T11:19:18.518007342-05:00"
+    created: "2022-05-12T12:25:00.706598098-05:00"
     dependencies:
     - name: rejson
       repository: file://charts/rejson
@@ -82,7 +82,7 @@ entries:
     version: 0.4.0
   - apiVersion: v2
     appVersion: v0.1.0
-    created: "2022-05-12T11:19:18.513762263-05:00"
+    created: "2022-05-12T12:25:00.70376332-05:00"
     dependencies:
     - name: rejson
       repository: file://charts/rejson
@@ -99,7 +99,7 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: v0.0.9
-    created: "2022-05-12T11:19:18.510563661-05:00"
+    created: "2022-05-12T12:25:00.700567198-05:00"
     dependencies:
     - name: rejson
       repository: file://charts/rejson
@@ -114,4 +114,4 @@ entries:
     urls:
     - https://insuusvenerati.github.io/helm-charts/tubearchivist-0.2.0.tgz
     version: 0.2.0
-generated: "2022-05-12T11:19:18.505187344-05:00"
+generated: "2022-05-12T12:25:00.69677723-05:00"

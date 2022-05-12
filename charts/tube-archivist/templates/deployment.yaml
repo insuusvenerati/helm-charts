@@ -44,7 +44,7 @@ spec:
           - name: ES_URL
             value: http://elasticsearch-master:9200
           - name: REDIS_HOST
-            value: tube-archivist-rejson
+            value: tubearchivist-rejson
           - name: HOST_GID
             value: "1000"
           - name: HOST_UID
@@ -54,7 +54,7 @@ spec:
           - name: TA_PASSWORD
             value: {{ .Values.login.password }}
           - name: ELASTIC_PASSWORD
-            value: {{ .Values.elastic.password }}
+            value: {{ .Values.login.password }}
           - name: TZ
             value: {{ .Values.timezone }}
           {{- with .Values.persistence }}
