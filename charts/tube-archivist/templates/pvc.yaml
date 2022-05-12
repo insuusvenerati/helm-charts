@@ -7,7 +7,7 @@ spec:
   {{- with .Values.persistence }}
   resources:
     requests:
-      storage: {{ .size }}
+      storage: {{ .youtubeSize }}
   volumeMode: Filesystem
   storageClassName: {{ .storageClassName | quote }}
   {{- end }}
@@ -24,7 +24,7 @@ spec:
   {{- with .Values.persistence }}
   resources:
     requests:
-      storage: {{ .size }}
+      storage: {{ .cacheSize }}
   volumeMode: Filesystem
   storageClassName: {{ .storageClassName | quote }}
   {{- end }}
