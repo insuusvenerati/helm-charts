@@ -23,8 +23,8 @@ backend:
     minReplicas: 1
     maxReplicas: 100
     targetCPUUtilizationPercentage: 80
-    vpa:
-      create: false
+  vpa:
+    create: false
   image:
     repository: ghcr.io/insuusvenerati/hello-free-shavacado-backend
     pullPolicy: IfNotPresent
