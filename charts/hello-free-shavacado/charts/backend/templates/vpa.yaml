@@ -1,0 +1,13 @@
+{{- if .Values.vpa.create -}}
+apiVersion: autoscaling.k8s.io/v1beta1
+kind: VerticalPodAutoscaler
+metadata:
+  name: {{ include "backend.fullname" . }}-vpa
+spec:
+  targetRef:
+    apiVersion: "apps/v1"
+    kind:       Deployment
+    name:       {{ include "backend.fullname" . }}
+  updatePolicy:
+    updateMode: "Initial"
+{{- end }}
