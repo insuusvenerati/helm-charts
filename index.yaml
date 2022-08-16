@@ -3,7 +3,17 @@ entries:
   hello-free-shavacado:
   - apiVersion: v2
     appVersion: 1.23.0-develop.4
-    created: "2022-08-03T00:18:41.259499687-05:00"
+    created: "2022-08-16T06:46:53.917865156-05:00"
+    description: A Helm chart for Kubernetes
+    digest: 64de3dfc80af4a25d9785a5a9e181d2aab2eadb62b3ad36deef947db75348629
+    name: hello-free-shavacado
+    type: application
+    urls:
+    - https://insuusvenerati.github.io/helm-charts/hello-free-shavacado-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: 1.23.0-develop.4
+    created: "2022-08-16T06:46:53.904472248-05:00"
     description: A Helm chart for Kubernetes
     digest: 089d2c78274386c328810bdd11fee87d57a94f6431bf853ef440fb902feb236e
     name: hello-free-shavacado
@@ -13,7 +23,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.23.0-develop.4
-    created: "2022-08-03T00:18:41.249262956-05:00"
+    created: "2022-08-16T06:46:53.892895607-05:00"
     description: A Helm chart for Kubernetes
     digest: 7ba14987434f5f64d88738341986fe00d64e20e5b4ff5bc6d702e826d43baf5e
     name: hello-free-shavacado
@@ -24,7 +34,7 @@ entries:
   pinry:
   - apiVersion: v2
     appVersion: 2.1.6
-    created: "2022-08-03T00:18:41.259920552-05:00"
+    created: "2022-08-16T06:46:53.918558252-05:00"
     description: A Helm chart for Kubernetes
     digest: 147646133a55dc9676676aab4732e36c4f9db9e0dbaab416bd58b16d82ee7e6c
     name: pinry
@@ -35,7 +45,7 @@ entries:
   tubearchivist:
   - apiVersion: v2
     appVersion: v0.1.7
-    created: "2022-08-03T00:18:41.283306447-05:00"
+    created: "2022-08-16T06:46:53.949865066-05:00"
     dependencies:
     - name: rejson
       repository: file://charts/rejson
@@ -52,7 +62,7 @@ entries:
     version: 0.4.5
   - apiVersion: v2
     appVersion: v0.1.5
-    created: "2022-08-03T00:18:41.279596767-05:00"
+    created: "2022-08-16T06:46:53.943568661-05:00"
     dependencies:
     - name: rejson
       repository: file://charts/rejson
@@ -69,7 +79,7 @@ entries:
     version: 0.4.4
   - apiVersion: v2
     appVersion: v0.1.3
-    created: "2022-08-03T00:18:41.276077898-05:00"
+    created: "2022-08-16T06:46:53.939168402-05:00"
     dependencies:
     - name: rejson
       repository: file://charts/rejson
@@ -86,7 +96,7 @@ entries:
     version: 0.4.2
   - apiVersion: v2
     appVersion: v0.1.3
-    created: "2022-08-03T00:18:41.272885063-05:00"
+    created: "2022-08-16T06:46:53.934485202-05:00"
     dependencies:
     - name: rejson
       repository: file://charts/rejson
@@ -103,7 +113,7 @@ entries:
     version: 0.4.1
   - apiVersion: v2
     appVersion: v0.1.2
-    created: "2022-08-03T00:18:41.269756979-05:00"
+    created: "2022-08-16T06:46:53.930006722-05:00"
     dependencies:
     - name: rejson
       repository: file://charts/rejson
@@ -120,7 +130,7 @@ entries:
     version: 0.4.0
   - apiVersion: v2
     appVersion: v0.1.0
-    created: "2022-08-03T00:18:41.265764816-05:00"
+    created: "2022-08-16T06:46:53.926048797-05:00"
     dependencies:
     - name: rejson
       repository: file://charts/rejson
@@ -137,7 +147,7 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: v0.0.9
-    created: "2022-08-03T00:18:41.26251646-05:00"
+    created: "2022-08-16T06:46:53.921521568-05:00"
     dependencies:
     - name: rejson
       repository: file://charts/rejson
@@ -152,4 +162,4 @@ entries:
     urls:
     - https://insuusvenerati.github.io/helm-charts/tubearchivist-0.2.0.tgz
     version: 0.2.0
-generated: "2022-08-03T00:18:41.238432658-05:00"
+generated: "2022-08-16T06:46:53.878942634-05:00"

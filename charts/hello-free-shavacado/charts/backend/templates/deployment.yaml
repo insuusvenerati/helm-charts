@@ -36,7 +36,7 @@ spec:
           env:
             - name: REDISHOST
               value: hello-free-shavacado-redis-headless
-            - name: DATABASE_URL
+            - name: POSTGRES_URL
               value: postgres://postgres:{{ .Values.postgresql.global.postgresql.auth.postgresPassword }}@hello-free-shavacado-postgresql-hl
           ports:
             - name: http
