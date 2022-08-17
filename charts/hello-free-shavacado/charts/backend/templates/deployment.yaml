@@ -37,7 +37,7 @@ spec:
             - name: REDISHOST
               value: hello-free-shavacado-redis-headless
             - name: POSTGRES_URL
-              value: postgres://postgres:{{ .Values.postgresql.global.postgresql.auth.postgresPassword }}@hello-free-shavacado-postgresql-hl
+              value: postgres://postgres:{{ .Values.postgresql.global.postgresql.auth.postgresPassword }}@hello-free-shavacado-postgresql-hl:5432/postgres?pool_timeout=0
           ports:
             - name: http
               containerPort: 4000
