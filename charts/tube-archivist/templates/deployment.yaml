@@ -41,22 +41,24 @@ spec:
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           env:
-          - name: ES_URL
-            value: http://elasticsearch-master:9200
-          - name: REDIS_HOST
-            value: tubearchivist-rejson
-          - name: HOST_GID
-            value: "1000"
-          - name: HOST_UID
-            value: "1000"
-          - name: TA_USERNAME
-            value: {{ .Values.login.username }}
-          - name: TA_PASSWORD
-            value: {{ .Values.login.password }}
-          - name: ELASTIC_PASSWORD
-            value: {{ .Values.login.password }}
-          - name: TZ
-            value: {{ .Values.timezone }}
+            - name: TA_HOST
+              value: {{ .Values.env.TA_HOST }}
+            - name: ES_URL
+              value: http://tubearchivist-elasticsearch:9200
+            - name: REDIS_HOST
+              value: tubearchivist-rejson
+            - name: HOST_GID
+              value: "1000"
+            - name: HOST_UID
+              value: "1000"
+            - name: TA_USERNAME
+              value: {{ .Values.login.username }}
+            - name: TA_PASSWORD
+              value: {{ .Values.login.password }}
+            - name: ELASTIC_PASSWORD
+              value: {{ .Values.login.password }}
+            - name: TZ
+              value: {{ .Values.timezone }}
           {{- with .Values.persistence }}
           volumeMounts:
             {{- toYaml .volumeMounts | nindent 12 }}
@@ -65,16 +67,16 @@ spec:
             - name: http
               containerPort: 8000
               protocol: TCP
-          livenessProbe:
-            httpGet:
-              path: /
-              port: http
-            initialDelaySeconds: 5
-          readinessProbe:
-            httpGet:
-              path: /
-              port: http
-            initialDelaySeconds: 5
+{{/*          livenessProbe:*/}}
+{{/*            httpGet:*/}}
+{{/*              path: /api/ping/*/}}
+{{/*              port: http*/}}
+{{/*            initialDelaySeconds: 5*/}}
+{{/*          readinessProbe:*/}}
+{{/*            httpGet:*/}}
+{{/*              path: /api/ping/*/}}
+{{/*              port: http*/}}
+{{/*            initialDelaySeconds: 5*/}}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       {{- with .Values.nodeSelector }}

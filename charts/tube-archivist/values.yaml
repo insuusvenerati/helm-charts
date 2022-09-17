@@ -15,39 +15,47 @@ nameOverride: ""
 fullnameOverride: ""
 
 elasticsearch:
-  persistence:
-    enabled: true
-  volumeClaimTemplate:
-    storageClassName: ""
-    resources:
-      requests:
-        storage: 5Gi
-  resources:
-    requests:
-      cpu: "250m"
-      memory: "512Mi"
-    limits:
-      cpu: "500m"
-      memory: "1Gi"
-  replicas: 1
+  image:
+    registry: docker.io
+    repository: bitnami/elasticsearch
+    tag: 8.3.3-debian-11-r5
+    digest: ""
+  extraConfig:
+    discovery:
+      type: single-node
+    cluster:
+      initial_master_nodes: ""
   # -- Elasticsearch environment variables
-  extraEnvs:
+  extraEnvVars:
     - name: ES_JAVA_OPTS
       value: "-Xms512m -Xmx512m"
       # -- Required. Needs to be the same as ELASTIC_PASSWORD below
     - name: ELASTIC_PASSWORD
+      value: "changeme"
+    - name: cluster.initial_master_nodes
       value: ""
+  master:
+    masterOnly: false
+    replicaCount: 1
+  coordinating:
+    replicaCount: 0
+  ingest:
+    replicaCount: 0
+  data:
+    replicaCount: 0
 
 login:
   username: admin
   password: changeme
 
 timezone: America/Chicago
+env:
+  TA_HOST: "localhost"
 
 persistence:
   enabled: true
   # -- Use your storageClassName. e.g. local-path for k3s
-  storageClassName: "local-path"
+  storageClassName: ""
   youtubeSize: 20Gi
   cacheSize: 5Gi
   volumeMounts:
