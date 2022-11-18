@@ -5,5 +5,8 @@ dependencies:
 - name: elasticsearch
   repository: https://charts.bitnami.com/bitnami
   version: 19.2.2
-digest: sha256:81e75571af28ce851d370cf023c1ccb7dbd10c5d8baefa2950b4db2ba528cb04
-generated: "2022-08-31T10:35:58.435117767-05:00"
+- name: common
+  repository: https://bjw-s.github.io/helm-charts/
+  version: 1.0.1
+digest: sha256:e4604412140717919b14acd8706e556fe574b34005bfd55a376b8071c7b175a3
+generated: "2022-11-18T09:33:13.004491369-06:00"
