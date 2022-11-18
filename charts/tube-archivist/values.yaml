@@ -89,6 +89,9 @@ controller:
 env:
   TA_HOST: "localhost"
   TA_PASSWORD: "changeme"
+  TA_USERNAME: "admin"
+  ES_URL: "http://tubearchivist-elasticsearch:9200"
+  REDIS_HOST: "tubearchivist-rejson"
 
 # -- Configure persistence for the chart here.
 # Additional items can be added by adding a dictionary key similar to the 'config' key.
