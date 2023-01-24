@@ -13,4 +13,4 @@ dependencies:
 description: A Helm chart for Kubernetes
 name: tubearchivist
 type: application
-version: 0.7.0
+version: 0.7.1
