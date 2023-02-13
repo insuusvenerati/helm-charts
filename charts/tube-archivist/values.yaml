@@ -20,6 +20,28 @@ global:
   # -- Set additional global annotations. Helm templates can be used.
   annotations: {}
 
+# -- Overrides for the rejson chart
+rejson:
+  env:
+    TZ: UTC
+    REDIS_ARGS: #extra arguments for Redis
+    REDISEARCH_ARGS: #arguments for RediSearch
+    REDISJSON_ARGS: #arguments for RedisJSON
+    REDISGRAPH_ARGS: #arguments for RedisGraph
+    REDISTIMESERIES_ARGS: #arguments for RedisTimeSeries
+    REDISBLOOM_ARGS: #arguments for RedisBloom
+  persistence:
+    config:
+      enabled: true
+      mountPath: /data
+      storageClass:
+      existingClaim: 
+      size: 1Gi
+  service:
+    main:
+      enabled: true
+      nameOverride: tubearchivist-rejson
+
 # -- Overrides for Elasticsearch chart
 elasticsearch:
   image:
@@ -197,7 +219,7 @@ service:
         primary: true
 
         # -- The port number
-        port:
+        port: 8000
 
         # -- Port protocol.
         # Support values are `HTTP`, `HTTPS`, `TCP` and `UDP`.
@@ -207,7 +229,7 @@ service:
         # -- Specify a service targetPort if you wish to differ the service port from the application port.
         # If `targetPort` is specified, this port number is used in the container definition instead of
         # the `port` value. Therefore named ports are not supported for this field.
-        targetPort:
+        targetPort: 8000
 
         # -- Specify the nodePort value for the LoadBalancer and NodePort service types.
         # [[ref]](https://kubernetes.io/docs/concepts/services-networking/service/#type-nodeport)
