@@ -45,23 +45,20 @@ redis:
 elasticsearch:
   image:
     registry: docker.io
-    repository: bitnami/elasticsearch
-    tag: 8.3.3-debian-11-r5
-    digest: ""
+    repository: elasticsearch
+    tag: 8.6.0
   extraConfig:
     discovery:
       type: single-node
-    cluster:
-      initial_master_nodes: ""
   # -- Elasticsearch environment variables
   extraEnvVars:
+    - name: path.repo
+      value: /usr/share/elasticsearch/data/snapshot
     - name: ES_JAVA_OPTS
       value: "-Xms512m -Xmx512m"
       # -- Required. Needs to be the same as ELASTIC_PASSWORD below
     - name: ELASTIC_PASSWORD
       value: "changeme"
-    - name: cluster.initial_master_nodes
-      value: ""
   master:
     masterOnly: false
     replicaCount: 1
