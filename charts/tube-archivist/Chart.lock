@@ -3,10 +3,10 @@ dependencies:
   repository: https://charts.bitnami.com/bitnami
   version: 17.7.3
 - name: elasticsearch
-  repository: https://charts.bitnami.com/bitnami
-  version: 19.2.2
+  repository: https://helm.elastic.co
+  version: 8.5.1
 - name: common
   repository: https://bjw-s.github.io/helm-charts/
   version: 1.3.1
-digest: sha256:7558ff8d6b30b942aac929ce4ca44f9981bcd4ac5c14a45e3ad290b870dfdb73
-generated: "2023-02-13T09:19:01.167525706-06:00"
+digest: sha256:708e5b764c7711bfcf3fb167c56444d858159bef33cbe1ff847b65ff4c5a115f
+generated: "2023-02-21T11:13:33.597203142-06:00"
