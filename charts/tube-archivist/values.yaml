@@ -8,7 +8,7 @@ image:
   repository: bbilly1/tubearchivist
   pullPolicy: IfNotPresent
   # -- Overrides the image tag whose default is the chart appVersion.
-  tag: ""
+  tag: "v0.3.2"
 
 global:
   # -- Set an override for the prefix of the fullname
@@ -36,7 +36,7 @@ redis:
     loadmodule /opt/redis-stack/lib/rejson.so
   master:
     persistence:
-      storageClass: ""
+      storageClass: "standard"
       size: 1Gi
   replica:
     replicaCount: 0
@@ -44,29 +44,36 @@ redis:
 # -- Overrides for Elasticsearch chart
 elasticsearch:
   image:
-    registry: docker.io
-    repository: elasticsearch
+    repository: bitnami/elasticsearch
     tag: 8.6.0
-  extraConfig:
-    discovery:
-      type: single-node
-  # -- Elasticsearch environment variables
+  global:
+    storageClass: ""
   extraEnvVars:
-    - name: path.repo
-      value: /usr/share/elasticsearch/data/snapshot
-    - name: ES_JAVA_OPTS
-      value: "-Xms512m -Xmx512m"
-      # -- Required. Needs to be the same as ELASTIC_PASSWORD below
+    - name: "discovery.type"
+      value: "single-node"
+    - name: xpack.security.enabled
+      value: "true"
     - name: ELASTIC_PASSWORD
       value: "changeme"
+
   master:
     masterOnly: false
     replicaCount: 1
+    persistence:
+      storageClass: ""
+      size: 1Gi
+    resources:
+      requests:
+        memory: 1Gi
+        cpu: 1000m
+      limits:
+        memory: 1Gi
+        cpu: 1000m
+  data:
+    replicaCount: 0
   coordinating:
     replicaCount: 0
   ingest:
-    replicaCount: 0
-  data:
     replicaCount: 0
 
 controller:
