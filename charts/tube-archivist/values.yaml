@@ -8,7 +8,7 @@ image:
   repository: bbilly1/tubearchivist
   pullPolicy: IfNotPresent
   # -- Overrides the image tag whose default is the chart appVersion.
-  tag: "v0.3.2"
+  tag:
 
 global:
   # -- Set an override for the prefix of the fullname
