@@ -36,7 +36,7 @@ redis:
     loadmodule /opt/redis-stack/lib/rejson.so
   master:
     persistence:
-      storageClass: "standard"
+      storageClass: ""
       size: 1Gi
   replica:
     replicaCount: 0
@@ -55,6 +55,15 @@ elasticsearch:
       value: "true"
     - name: ELASTIC_PASSWORD
       value: "changeme"
+  extraConfig:
+    path:
+      repo: /usr/share/elasticsearch/data/snapshot
+  extraVolumeMounts:
+    - name: snapshot
+      mountPath: /usr/share/elasticsearch/data/snapshot
+  extraVolumes:
+    - name: snapshot
+      emptyDir: {}
 
   master:
     masterOnly: false
