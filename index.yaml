@@ -1,9 +1,20 @@
 apiVersion: v1
 entries:
+  demo-app:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-04-23T17:35:18.1246553-05:00"
+    description: A Helm chart for Kubernetes
+    digest: c0eef64c1b7e7aa3b8dadf918376fd896217a5bc3c0422a246eaf9b42a81a6ec
+    name: demo-app
+    type: application
+    urls:
+    - https://insuusvenerati.github.io/helm-charts/demo-app-0.1.0.tgz
+    version: 0.1.0
   hello-free-shavacado:
   - apiVersion: v2
     appVersion: 0.0.0-development
-    created: "2023-03-17T23:23:53.642911174-05:00"
+    created: "2023-04-23T17:35:18.1302379-05:00"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts/
@@ -18,7 +29,7 @@ entries:
   pinry:
   - apiVersion: v2
     appVersion: 2.1.6
-    created: "2023-03-17T23:23:53.643425633-05:00"
+    created: "2023-04-23T17:35:18.1312373-05:00"
     description: A Helm chart for Kubernetes
     digest: 147646133a55dc9676676aab4732e36c4f9db9e0dbaab416bd58b16d82ee7e6c
     name: pinry
@@ -29,7 +40,7 @@ entries:
   rejson:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-03-17T23:23:53.648279946-05:00"
+    created: "2023-04-23T17:35:18.1377496-05:00"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts/
@@ -43,7 +54,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-03-17T23:23:53.645901091-05:00"
+    created: "2023-04-23T17:35:18.1337361-05:00"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts/
@@ -58,7 +69,7 @@ entries:
   tubearchivist:
   - apiVersion: v2
     appVersion: v0.3.4
-    created: "2023-03-17T23:23:53.837677764-05:00"
+    created: "2023-04-23T17:35:18.3453095-05:00"
     dependencies:
     - name: redis
       repository: https://charts.bitnami.com/bitnami
@@ -78,7 +89,7 @@ entries:
     version: 0.8.6
   - apiVersion: v2
     appVersion: v0.3.4
-    created: "2023-03-17T23:23:53.821712191-05:00"
+    created: "2023-04-23T17:35:18.3281638-05:00"
     dependencies:
     - name: redis
       repository: https://charts.bitnami.com/bitnami
@@ -98,7 +109,7 @@ entries:
     version: 0.8.5
   - apiVersion: v2
     appVersion: v0.3.3
-    created: "2023-03-17T23:23:53.805248757-05:00"
+    created: "2023-04-23T17:35:18.3091478-05:00"
     dependencies:
     - name: redis
       repository: https://charts.bitnami.com/bitnami
@@ -118,7 +129,7 @@ entries:
     version: 0.8.4
   - apiVersion: v2
     appVersion: v0.3.2
-    created: "2023-03-17T23:23:53.784639484-05:00"
+    created: "2023-04-23T17:35:18.2915633-05:00"
     dependencies:
     - name: redis
       repository: https://charts.bitnami.com/bitnami
@@ -138,7 +149,7 @@ entries:
     version: 0.8.3
   - apiVersion: v2
     appVersion: v0.3.2
-    created: "2023-03-17T23:23:53.770515765-05:00"
+    created: "2023-04-23T17:35:18.2810497-05:00"
     dependencies:
     - name: redis
       repository: https://charts.bitnami.com/bitnami
@@ -158,7 +169,7 @@ entries:
     version: 0.8.2
   - apiVersion: v2
     appVersion: v0.3.2
-    created: "2023-03-17T23:23:53.75395865-05:00"
+    created: "2023-04-23T17:35:18.2635204-05:00"
     dependencies:
     - name: redis
       repository: https://charts.bitnami.com/bitnami
@@ -178,7 +189,7 @@ entries:
     version: 0.8.1
   - apiVersion: v2
     appVersion: v0.3.2
-    created: "2023-03-17T23:23:53.738408463-05:00"
+    created: "2023-04-23T17:35:18.2439229-05:00"
     dependencies:
     - name: redis
       repository: https://charts.bitnami.com/bitnami
@@ -198,7 +209,7 @@ entries:
     version: 0.8.0
   - apiVersion: v2
     appVersion: v0.3.0
-    created: "2023-03-17T23:23:53.722426009-05:00"
+    created: "2023-04-23T17:35:18.2264166-05:00"
     dependencies:
     - name: rejson
       repository: file://charts/rejson
@@ -218,7 +229,7 @@ entries:
     version: 0.7.1
   - apiVersion: v2
     appVersion: v0.3.0
-    created: "2023-03-17T23:23:53.711249046-05:00"
+    created: "2023-04-23T17:35:18.2128159-05:00"
     dependencies:
     - name: rejson
       repository: file://charts/rejson
@@ -238,7 +249,7 @@ entries:
     version: 0.7.0
   - apiVersion: v2
     appVersion: v0.2.4
-    created: "2023-03-17T23:23:53.700661644-05:00"
+    created: "2023-04-23T17:35:18.2013072-05:00"
     dependencies:
     - name: rejson
       repository: file://charts/rejson
@@ -258,7 +269,7 @@ entries:
     version: 0.6.1
   - apiVersion: v2
     appVersion: v0.2.4
-    created: "2023-03-17T23:23:53.689650184-05:00"
+    created: "2023-04-23T17:35:18.1877785-05:00"
     dependencies:
     - name: rejson
       repository: file://charts/rejson
@@ -278,7 +289,7 @@ entries:
     version: 0.6.0
   - apiVersion: v2
     appVersion: v0.2.1
-    created: "2023-03-17T23:23:53.676950832-05:00"
+    created: "2023-04-23T17:35:18.1742784-05:00"
     dependencies:
     - name: rejson
       repository: file://charts/rejson
@@ -295,7 +306,7 @@ entries:
     version: 0.5.0
   - apiVersion: v2
     appVersion: v0.1.7
-    created: "2023-03-17T23:23:53.66792157-05:00"
+    created: "2023-04-23T17:35:18.1632776-05:00"
     dependencies:
     - name: rejson
       repository: file://charts/rejson
@@ -312,7 +323,7 @@ entries:
     version: 0.4.5
   - apiVersion: v2
     appVersion: v0.1.5
-    created: "2023-03-17T23:23:53.665172378-05:00"
+    created: "2023-04-23T17:35:18.1597774-05:00"
     dependencies:
     - name: rejson
       repository: file://charts/rejson
@@ -329,7 +340,7 @@ entries:
     version: 0.4.4
   - apiVersion: v2
     appVersion: v0.1.3
-    created: "2023-03-17T23:23:53.661832774-05:00"
+    created: "2023-04-23T17:35:18.1547639-05:00"
     dependencies:
     - name: rejson
       repository: file://charts/rejson
@@ -346,7 +357,7 @@ entries:
     version: 0.4.2
   - apiVersion: v2
     appVersion: v0.1.3
-    created: "2023-03-17T23:23:53.659202494-05:00"
+    created: "2023-04-23T17:35:18.1517768-05:00"
     dependencies:
     - name: rejson
       repository: file://charts/rejson
@@ -363,7 +374,7 @@ entries:
     version: 0.4.1
   - apiVersion: v2
     appVersion: v0.1.2
-    created: "2023-03-17T23:23:53.656779608-05:00"
+    created: "2023-04-23T17:35:18.1487625-05:00"
     dependencies:
     - name: rejson
       repository: file://charts/rejson
@@ -380,7 +391,7 @@ entries:
     version: 0.4.0
   - apiVersion: v2
     appVersion: v0.1.0
-    created: "2023-03-17T23:23:53.65425593-05:00"
+    created: "2023-04-23T17:35:18.1457631-05:00"
     dependencies:
     - name: rejson
       repository: file://charts/rejson
@@ -397,7 +408,7 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: v0.0.9
-    created: "2023-03-17T23:23:53.650896666-05:00"
+    created: "2023-04-23T17:35:18.1412497-05:00"
     dependencies:
     - name: rejson
       repository: file://charts/rejson
@@ -412,4 +423,4 @@ entries:
     urls:
     - https://insuusvenerati.github.io/helm-charts/tubearchivist-0.2.0.tgz
     version: 0.2.0
-generated: "2023-03-17T23:23:53.638261635-05:00"
+generated: "2023-04-23T17:35:18.1236504-05:00"
