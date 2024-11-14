@@ -1,4 +1,5 @@
 # Helm Charts
+# Deprecated in favor of https://github.com/bjw-s/helm-charts library charts
 
 [tube-archivist](charts/tube-archivist/README.md)
 
